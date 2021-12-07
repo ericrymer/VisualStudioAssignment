@@ -1,0 +1,191 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color: lightgray;
+}
+
+body.fade-out {
+    opacity: .1;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+h1{
+    text-transform:uppercase;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    margin-top: 1%;
+}
+
+h1:hover{
+    filter:grayscale(5%);
+    transform:scale(1.1);
+    transition: transform 1s;
+}
+
+/*form styling*/
+
+.form-popup {
+    border: 3px solid #f0f1f0;
+    z-index: 8;
+    display: none;
+    position: fixed;
+    bottom: .5vw;
+    right: .5vw;
+}
+.form-container {
+    max-width: 49vw;
+    padding: 1vw;
+    background-color: white;
+}
+.form-container input[type=text] {
+    width: 100%;
+    padding: .93vw;
+    margin: .6vw 0 .6vw 0;
+    border: none;
+    background: Gainsboro;
+    font-size: 1vw;
+}
+
+button {
+    font-family: "Trebuchet MS", Optima;
+    letter-spacing: .3vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 1.5vw;
+    cursor: pointer;
+    width: 10;
+    height: auto;
+}
+
+
+button:hover, .form-container .btn:hover {
+    color: white; 
+    background-color: rgb(16, 53, 219);
+    transition-duration: 1s; 
+    -webkit-transition-duration: 1s; 
+    border-color: rgb #daa804; 
+}
+
+/* Submit button */
+.form-container .btn {
+    background-color: white; 
+    color: rgb(0, 0, 0);
+    border-color: black;
+    margin-bottom: 1vh; 
+}
+
+/* Close button */
+.form-container .cancel {
+    background-color: black;
+    color: white;
+    border-color: gray;
+}
+
+/* Styling for close button on hover */
+.form-container .cancel:hover {
+    color: white;
+    background-color: rgb(226, 175, 7);
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    border-color: black;
+}
+.Pop_Up_Button {
+    position: fixed; /* The element is positioned relative to the viewport and stays in the same location no matter what */
+    bottom: 5.75vw; /* Positions the button slightly up from the bottom of the viewport */
+    right: 1.75vw; /* Positions the viewport slightly right from the side of the viewport */
+    width: 25vw; /* Sets the width relative to the viewport width */
+    background-color: white; /* Sets the background color of the button to white */
+    color: black; /* Sets the color of the button text to black */
+    border: solid black; /* This makes a solid black border around the button */
+    cursor: pointer; /* This changes the cursor when hovered over the button to a pointer */
+    -webkit-animation: movePopup 5s; /* Animation for 5 seconds for Safari 4.0-8.0 */
+    animation: movePopup 5s; /* Animation set for 5 seconds */
+}
+
+/* movePopup animation moves the button from off the right side of the screen to its fixed location on the viewport */
+@keyframes movePopup {
+    from {
+        right: -40vw;
+    }
+
+    to {
+        right: 1.75vw;
+    }
+}
+
+@-webkit-keyframes movePopup {
+    from {
+        right: -40vw;
+    }
+
+    to {
+        right: 1.75vw;
+    }
+}
+

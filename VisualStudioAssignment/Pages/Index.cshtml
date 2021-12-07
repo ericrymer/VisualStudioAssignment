@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Snowboarding</h1>
+    <br />
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cHSjInARd_0?controls=0" title="YouTube video player"
+            frameborder="0" allow="accelerometer;
+            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe><br /><br />
+    <p>Click below to get more information</p>
+</div>
+
+<!-- Contact form -->
+<div id="Contact">
+    <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+    <div class="form-popup" id="myForm">
+        <form action="https://formspree.io/f/xbjqwwky" method="POST" class="form-container">
+            <h1>Contact</h1>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Type your name here" name="name" required>
+            <label for="phone"><b>Phone</b></label>
+            <input type="text" placeholder="Type your phone number here" name="phone">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Type your email address here" name="email" required>
+            <label for="message"><b>Message</b></label>
+            <input type="text" placeholder="Type your message here" name="message">
+
+            <button type="submit" class="btn">SUBMIT</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+        </form>
+    </div>
+</div>
+
